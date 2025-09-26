@@ -1,0 +1,65 @@
+:root {
+  --accent: #ff2a00; /* your orange-red accent */
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background: #1a1a1a;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: space-between;
+  text-align: center;
+}
+
+/* Coming Soon */
+.coming-soon {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.logo-placeholder {
+  max-width: 300px;
+  height: auto;
+}
+
+.coming-soon h1 {
+  font-size: 2rem;
+  color: var(--accent);
+}
+
+/* Footer */
+.site-footer {
+  background: #ffffff;
+  color: #1a1a1a;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+/* Fade-in animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 1s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
